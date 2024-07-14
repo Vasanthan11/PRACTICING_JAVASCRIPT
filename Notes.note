@@ -1,0 +1,41 @@
+
+There are 7 primitive data types
+1.Numbers
+2.String
+3.Boolean
+4.Undefined
+5.null
+6.Symbol (ES2015)-value is unique and cannot be changed
+7.BigInt (ES2020) 
+
+
+To check this use console.log(type of given types)
+hint: if it is string place it inside the quotes '' or "".
+
+
+There are three ways to assign a variable in javascript
+1.var (redeclare and reasign)
+2.let (only reasign)
+3.const (cannnot redeclare or reasign)
+let is block scope.
+var is function scope.
+
+
+There are arithmetic operators
+addition +
+subtraction -
+multiplication x
+division /
+powers **
+
+
+Scope of the function:
+1.Global Scope
+2.Local Scope
+can't able to use the local scope outside the function if it is decalered inside the function.
+
+
+To use the numbers in js use the parseInt and parseFloat inside the function because it will make the given text as a number.
+parseInt is for a whole number.
+parseFloat is for a decimal number.
+other than this two use + infront of the content or parameter inside the function to make this number in the arithmetic operations.
