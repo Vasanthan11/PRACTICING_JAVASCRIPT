@@ -1,4 +1,5 @@
 "Shadowed Variables"
+
 You learned about local ("function-internal") variables and global variables.
 
 What happens if you have this code?

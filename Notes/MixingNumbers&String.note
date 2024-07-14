@@ -1,4 +1,5 @@
 Mixing Numbers & Strings
+
 You saw the example with a number and a "text number" being added
 
 3 + '3' => '33'

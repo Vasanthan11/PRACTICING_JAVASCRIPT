@@ -1,4 +1,5 @@
 "Indirect" vs "Direct" Function Execution - Summary
+
 It can be confusing to see that there seem to be two ways of executing a function:
 
 function add() {

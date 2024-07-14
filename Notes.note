@@ -39,3 +39,16 @@ To use the numbers in js use the parseInt and parseFloat inside the function bec
 parseInt is for a whole number.
 parseFloat is for a decimal number.
 other than this two use + infront of the content or parameter inside the function to make this number in the arithmetic operations.
+
+
+Arrays and Objects.
+Objects are a group of data for a particular one store in key value pair inside the curly brackets.
+Arrays are the group of data stored in a square brackets seperated by comma.
+To add data in the array there is a build in function of javascript calles .push() which adds data to the exisiting array data.
+
+
+defer and async as a keyword inside the script to make the script to load at fast.
+defer will load the script first but it will allow to access script once the webpage is completely loaded.
+ <script src="./Practice.js" defer></script>
+async will load the script first and allow to access script before the webpage is completely loaded.
+ <script src="./Practice.js" async></script>
