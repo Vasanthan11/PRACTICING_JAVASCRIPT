@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Box</title>
+</head>
+<body>
+    <div class="button-Box">
+        <input type="number" name="numbers" id="content" value="0">
+        <div class="sum">
+            <button class="add">+</button>
+            <button class="sub">-</button>
+            <button class="multi">x</button>
+        </div>
+        <input type="number" name="result" id="result" value="0" readonly>
+    </div>
+
+    <script>
+        // Get elements by ID
+        const contentElement = document.getElementById('content');
+        const resultElement = document.getElementById('result');
+
+        // Get button elements by class
+        const addButton = document.querySelector('.add');
+        const subButton = document.querySelector('.sub');
+        const multiButton = document.querySelector('.multi');
+
+        // Initialize the result value
+        let resultValue = 0;
+
+        // Function to update result input value
+        function updateResult(operation) {
+            const contentValue = parseFloat(contentElement.value);
+
+            if (operation === 'add') {
+                resultValue += contentValue;
+            } else if (operation === 'sub') {
+                resultValue -= contentValue;
+            } else if (operation === 'multi'){
+                if (resultValue === 0 && contentValue !== 0) {
+                    resultValue = contentValue;
+                } else {
+                    resultValue *= contentValue;
+                }
+            }
+
+            resultElement.value = resultValue;
+            contentElement.value = 0;  // Reset the content input field
+        }
+
+        // Add event listeners to buttons
+        addButton.addEventListener('click', () => updateResult('add'));
+        subButton.addEventListener('click', () => updateResult('sub'));
+        multiButton.addEventListener('click', () => updateResult('multi'));
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME USING SCRIPT</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+.normal{
+    color: aqua;
+}
+.medium{
+    color: brown;
+}
+    </style>
+</head>
+<body>
+    <!-- <section id="health-levels">
+        <h2>MONSTER HEALTH</h2>
+        <progress id="monster-health" max="100" value="100">100%</progress>
+        <h2>PLAYER HEALTH<span id="bonus-life">1</span></h2>
+        <progress id="player-health" max="100" value="10">100%</progress>
+      </section> -->
+
+<div class="normal">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum exercitationem saepe earum libero odit.</p>
+</div>
+
+<button class="change">Click to change</button>
+    <script src="./getDocs.js"></script>
+    <script src="./scripting.js"></script>
+    <script>
+        const normalElement = document.querySelector('.normal');
+        const changeButton = document.querySelector('.change');
+
+        function exchange() {
+            if (normalElement.classList.contains('normal')) {
+                normalElement.classList.remove('normal');
+                normalElement.classList.add('medium');
+            } else {
+                normalElement.classList.remove('medium');
+                normalElement.classList.add('normal');
+            }
+        }
+
+        changeButton.addEventListener('click', exchange);
+    </script>
+</body>
+</html>
