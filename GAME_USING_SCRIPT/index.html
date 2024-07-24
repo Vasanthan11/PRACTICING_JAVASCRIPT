@@ -20,6 +20,9 @@
     .sectionFour{
         text-align: center;
     }
+    .sectionFive{
+        text-align: center;
+    }
 </style>
 <body>
 
@@ -63,28 +66,19 @@
 
 </section>  <br><hr> <br>
 
+<section class="sectionFive">
+<input type="number" placeholder="Enter a number" class="num01"><br><br>
+<input type="number" placeholder="Enter a number" class="num02"><br><br>
+<button class="multi">Myltiply</button>
+<button class="divide">Divide</button>
+<h3 class="resultAns">Result:</h3>
+</section>  <br><hr> <br>
+
+
 
     <script src="./getDocs.js"></script>
     <script src="./scripting.js"></script>
     <script>
-let computerRandomNumber = Math.floor(Math.random() * 10) + 1;
-console.log(computerRandomNumber)
-let manualNumber=document.querySelector('#manualNumber');
-let btn06=document.querySelector('.btn06');
-let fourh3=document.querySelector('.fourh3');
-
-function checkAvailable(){
-    let OutManulaNumbewr=parseInt(manualNumber.value, 10);
-    if(computerRandomNumber===OutManulaNumbewr){
-        fourh3.innerHTML='OUTPUT: Good Work';
-        console.log(OutManulaNumbewr)
-    }
-    else{
-        fourh3.innerHTML='OUTPUT: Not matched';
-    }
-}
-
-btn06.addEventListener('click',checkAvailable);
 
     </script>
 </body>

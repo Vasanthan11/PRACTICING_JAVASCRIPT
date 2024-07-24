@@ -108,7 +108,7 @@ console.log(area);
 
 
 
-// find the year is a leap year or not using function.
+//4. Find the year is a leap year or not using function.
 function findLeap(){
     let leapYear=2023;
     if((leapYear % 4 === 0 && leapYear % 100 !== 0) || (leapYear % 400 === 0)){
@@ -120,3 +120,41 @@ function findLeap(){
 }
 
 findLeap();
+
+
+
+
+
+
+
+
+
+
+// 5. Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  
+let num01=document.querySelector(".num01");
+let num02=document.querySelector(".num02");
+let multi=document.querySelector(".multi");
+let divide=document.querySelector(".divide");
+let resultAns=document.querySelector(".resultAns");
+
+function multiplying(){
+    let inputnum01=num01.value;
+    let inputnum02=num02.value;
+    let multiAnswer=inputnum01*inputnum02;
+    resultAns.innerHTML="Result : " + multiAnswer;
+    num01.value="";
+    num02.value="";
+}
+
+function dividing(){
+    let inputnum01=num01.value;
+    let inputnum02=num02.value;
+    let multiAnswer=inputnum01/inputnum02;
+    let decimalPlaces = 2;
+    resultAns.innerHTML="Result : " + multiAnswer.toFixed(decimalPlaces);
+    num01.value="";
+    num02.value="";
+}
+
+multi.addEventListener('click', multiplying)
+divide.addEventListener('click', dividing)
