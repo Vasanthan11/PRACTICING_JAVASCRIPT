@@ -134,3 +134,34 @@ function dividing(){
 
 multi.addEventListener('click', multiplying)
 divide.addEventListener('click', dividing)
+
+
+
+
+
+
+
+
+
+
+
+const content=document.querySelector(".content");
+const ssbtn1=document.querySelector(".ssbtn1");
+const ssbtn2=document.querySelector(".ssbtn2");
+
+function write(){
+  let textWrite =  prompt("Write the answers");
+  if(textWrite===""){
+    content.innerHTML="The prompt text from user is empty";
+  }
+  else{
+    content.innerHTML=textWrite;
+  }
+}
+
+function clear(){
+    content.innerHTML="This is a prompt text from user : ";
+}
+
+ssbtn1.addEventListener('click',write);
+ssbtn2.addEventListener('click',clear);

@@ -52,3 +52,6 @@ defer will load the script first but it will allow to access script once the web
  <script src="./Practice.js" defer></script>
 async will load the script first and allow to access script before the webpage is completely loaded.
  <script src="./Practice.js" async></script>
+
+
+Function inside a function is called as call back function.
