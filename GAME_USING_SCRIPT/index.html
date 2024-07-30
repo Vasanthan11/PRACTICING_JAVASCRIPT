@@ -27,7 +27,7 @@
         text-align: center;
     }
 </style>
-<body>
+<body onload="draw();">
 
 <section class="firstSection">
     <div class="firstDiv">
@@ -85,10 +85,23 @@
     <button class="ssbtn2">Delete</button>
 </section>
 
+<section class="sectionSeven" >
+    <canvas id="canvas" width="150" height="150"></canvas>
+</section>
+
     <script src="./getDocs.js"></script>
     <script src="./scripting.js"></script>
     <script>
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var context = canvas.getContext('2d');
 
+    context.fillRect(20,20,100,100);
+    context.clearRect(40,40,60,60);
+    context.strokeRect(45,45,50,50);
+  }
+}
     </script>
 </body>
 </html>
